@@ -6,10 +6,11 @@ const About: React.FC = () => {
     <section id="about" className="py-12 md:py-24 px-4 bg-[#f8f8f8]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
-          <h2 className="text-4xl font-black mb-8">The Narrative</h2>
+          <h2 className="text-4xl font-black mb-8">A bit about me.</h2>
+          
           <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
             <p>
-              I believe that the most powerful data science isn't just about the complexity of the algorithm, but the clarity of the insight. Over the past decade, I've led technical teams through the "trough of disillusionment" in AI by focusing on one thing: human-centered value.
+              I’ve now worked for 10 years in Data Science, even before I knew it was called Data Science. You can read about my journey here.
             </p>
             <p>
               My journey started in academic research, where I learned the rigor of the scientific method. I transitioned to the industrial sector because I wanted to see my models impacting real-world efficiency and sustainability. Whether it's predicting failures in wind turbines or optimizing heavy logistics, I find the "puzzle" of real-world noise fascinating.
@@ -25,11 +26,20 @@ const About: React.FC = () => {
         
         <div className="flex flex-col gap-8">
           <div className="neo-border bg-white p-2 neo-shadow transform rotate-2">
-            <img 
-              src="https://picsum.photos/seed/ai-expert/800/800" 
-              alt="Professional but approachable portrait" 
-              className="w-full grayscale hover:grayscale-0 transition-all duration-500"
-            />
+            <h3 className="font-bold text-xl mb-4">The Beginnings.</h3>
+            <p>
+              I started with it in academia through my PhD in Computational
+              Biology. There, I was using machine learning and data science to
+              build biological networks and understand how they interact with
+              viral proteins during infections. I used network topology
+              algorithms to understand the functional relationships and modules
+              formed between viral and host proteins, and physics-guided
+              algorithms to model the three-dimensional structure of viral entry
+              proteins. That led to 5 papers and 1 patent application, which was
+              got paused due to the difficulty of generating the mutant protein
+              at the industrial scale necessary for a profitable
+              commercialisation.
+            </p>
           </div>
           <div className="neo-border bg-[#bef264] p-8 neo-shadow -rotate-1">
             <h3 className="font-bold text-xl mb-4">Core Focus Areas</h3>

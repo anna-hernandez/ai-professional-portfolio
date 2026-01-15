@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </h1>
       
       <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed mb-10">
-        I am a Data Science and AI advocate with over ten years of international experience across industry sectors: from science and legal tech, and government to creative media, energy, and manufacturing.
+        I am a Data Science and AI advocate with over ten years of international experience across industry sectors: from biosciences, legal tech, and government to creative media, energy, and manufacturing.
       </p>
 
       <div className="flex flex-wrap gap-4">
