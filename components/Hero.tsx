@@ -10,12 +10,15 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <section id="home" className="pt-32 pb-20 px-4 max-w-6xl mx-auto min-h-[80vh] flex flex-col justify-center">
-      <div className="mb-6">
-        <span className="inline-block px-4 py-1 neo-border text-sm font-bold neo-shadow-sm mb-4">
-          ✨ Available for cool stuff
-        </span>
-      </div>
       
+      {/* Page status indicator */}
+      <div className="fixed bottom-8 right-8 hidden lg:block pointer-events-none z-40">
+        <div className="neo-border bg-white px-4 py-2 neo-shadow transform rotate-3 flex items-center gap-2">
+          <div className="w-2 h-2 bg-[#bef264] rounded-full animate-pulse"></div>
+          <span className="text-xs font-bold uppercase tracking-widest">✨ Available for cool stuff</span>
+        </div>
+      </div>
+
       <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
         Data Scientist & <span className="bg-[#bef264] px-2 border-b-4 border-black">AI</span> Ambassador.
       </h1>

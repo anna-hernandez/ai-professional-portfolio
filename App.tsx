@@ -64,13 +64,7 @@ const App: React.FC = () => {
         </div>
       </footer>
 
-      {/* Page status indicator */}
-      <div className="fixed bottom-8 right-8 hidden lg:block pointer-events-none z-40">
-        <div className="neo-border bg-white px-4 py-2 neo-shadow transform rotate-3 flex items-center gap-2">
-          <div className="w-2 h-2 bg-[#bef264] rounded-full animate-pulse"></div>
-          <span className="text-xs font-bold uppercase tracking-widest">{activeSection} Page</span>
-        </div>
-      </div>
+      
     </div>
   );
 };
