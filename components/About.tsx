@@ -10,22 +10,9 @@ const About: React.FC = () => {
           
           <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
             <p>
-              I’ve now worked for 10 years in Data Science, even before I knew it was called Data Science. You can read about my journey here.
+              I've now worked in Data Science for over 10 years. They've gone fast. You can read about my journey here.
             </p>
-            <p>
-              My journey started in academic research, where I learned the rigor of the scientific method. I transitioned to the industrial sector because I wanted to see my models impacting real-world efficiency and sustainability. Whether it's predicting failures in wind turbines or optimizing heavy logistics, I find the "puzzle" of real-world noise fascinating.
-            </p>
-            <p>
-              Currently, I act as an AI Ambassador, helping organizations navigate the shift toward Large Language Models. I spend a lot of my time bridging the gap between C-suite expectations and engineering realities—ensuring that AI remains a tool for augmentation, not just automation.
-            </p>
-            <p>
-              When I'm not looking at a terminal, I'm usually teaching. Making AI accessible to non-technical stakeholders is my favorite part of the job. I truly believe that an AI-literate workforce is our best shot at solving the sustainability challenges of the next fifty years.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex flex-col gap-8">
-          <div className="neo-border bg-white p-2 neo-shadow transform rotate-2">
+            <div className="neo-border bg-white p-2 neo-shadow transform rotate-2">
             <h3 className="font-bold text-xl mb-4">The Beginnings.</h3>
             <p>
               I started with it in academia through my PhD in Computational
@@ -41,6 +28,17 @@ const About: React.FC = () => {
               commercialisation.
             </p>
           </div>
+            <p>
+              Currently, I act as an AI Ambassador, helping organizations navigate the shift toward Large Language Models. I spend a lot of my time bridging the gap between C-suite expectations and engineering realities—ensuring that AI remains a tool for augmentation, not just automation.
+            </p>
+            <p>
+              When I'm not looking at a terminal, I'm usually teaching. Making AI accessible to non-technical stakeholders is my favorite part of the job. I truly believe that an AI-literate workforce is our best shot at solving the sustainability challenges of the next fifty years.
+            </p>
+          </div>
+        </div>
+        
+        <div className="flex flex-col gap-8">
+          
           <div className="neo-border bg-[#bef264] p-8 neo-shadow -rotate-1">
             <h3 className="font-bold text-xl mb-4">Core Focus Areas</h3>
             <ul className="space-y-2 font-medium">
