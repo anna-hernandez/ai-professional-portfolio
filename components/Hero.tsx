@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
     <section id="home" className="pt-32 pb-20 px-4 max-w-6xl mx-auto min-h-[80vh] flex flex-col justify-center">
       
       {/* Page status indicator */}
-      <div className="fixed hidden lg:block pointer-events-none z-40 top-4 left-4">
+      <div className="hidden lg:block pointer-events-none z-40">
         <div className="neo-border bg-white px-4 py-2 neo-shadow transform rotate-3 flex items-center gap-2">
           <span className="text-xs font-bold uppercase tracking-widest">✨ Available for cool stuff</span>
         </div>
@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </p>
 
       <div className="flex flex-wrap gap-4">
-        <NeoButton onClick={() => onNavigate(Section.WORK)} className="py-4 px-10 text-xl bg-[#bef264]" variant="accent">
+        <NeoButton onClick={() => onNavigate(Section.WORK)} className="bg-[#bef264] py-4 px-10 text-xl" variant="accent">
           See my work
         </NeoButton>
         <NeoButton onClick={() => onNavigate(Section.CONTACT)} className="py-4 px-10 text-xl">
