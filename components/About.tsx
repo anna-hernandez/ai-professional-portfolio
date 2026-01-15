@@ -4,7 +4,7 @@ import React from 'react';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-12 md:py-24 px-4 bg-[#f8f8f8]">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 gap-16 items-start">
         <div>
           <h2 className="text-4xl font-black mb-8">A bit about me.</h2>
           
@@ -135,20 +135,7 @@ const About: React.FC = () => {
           </div>
         </div>
         
-        {/* <div className="flex flex-col gap-8"> */}
-          
-          <div className="neo-border bg-[#bef264] p-8 neo-shadow -rotate-1">
-            <h3 className="font-bold text-xl mb-4">Core Focus Areas</h3>
-            <ul className="space-y-2 font-medium">
-              <li>→ Sustainability & Circular Economy</li>
-              <li>→ Industrial AI / Predictive Maintenance</li>
-              <li>→ Generative AI Governance & Ethics</li>
-              <li>→ Technical Strategy for Product Teams</li>
-              <li>→ Human-AI Collaboration Frameworks</li>
-            </ul>
-          </div>
         </div>
-      {/* </div> */}
     </section>
   );
 };

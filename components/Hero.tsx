@@ -25,6 +25,18 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed mb-10">
         I am a Data Science and AI advocate with over ten years of international experience across industry sectors: from biosciences, legal tech, and government to creative media, energy, and manufacturing.
       </p>
+          
+      <div className="neo-border bg-[#bef264] p-8 neo-shadow -rotate-1">
+        <h3 className="font-bold text-xl mb-4">Core Focus Areas</h3>
+        <ul className="space-y-2 font-medium">
+          <li>→ Sustainability & Circular Economy</li>
+          <li>→ Industrial AI / Predictive Maintenance</li>
+          <li>→ Generative AI Governance & Ethics</li>
+          <li>→ Technical Strategy for Product Teams</li>
+          <li>→ Human-AI Collaboration Frameworks</li>
+        </ul>
+      </div>
+        
 
       <div className="flex flex-wrap gap-4">
         <NeoButton onClick={() => onNavigate(Section.WORK)} className="bg-[#bef264] py-4 px-10 text-xl" variant="accent">
