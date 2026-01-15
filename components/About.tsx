@@ -24,10 +24,6 @@ const About: React.FC = () => {
               commercialisation).
             </p>
             </div>
-            <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
-            <p>
-              I've now worked in Data Science for over 10 years. They've gone fast. You can read about my journey here.
-            </p>
             <div className="neo-border bg-white p-2 neo-shadow transform rotate-2 space-y-2 ">
             <h3 className="font-bold text-xl mb-4">The Beginnings.</h3>
             <p>
@@ -53,7 +49,8 @@ const About: React.FC = () => {
               collaborated in ML-guided marketing attribution research using
               causal inference techniques.
             </p>
-          </div>
+            </div>
+            
             
             <p>
               When I'm not looking at a terminal, I'm usually teaching. Making AI accessible to non-technical stakeholders is my favorite part of the job. I truly believe that an AI-literate workforce is our best shot at solving the sustainability challenges of the next fifty years.
