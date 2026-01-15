@@ -10,25 +10,20 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <section id="home" className="pt-32 pb-20 px-4 max-w-6xl mx-auto min-h-[80vh] flex flex-col justify-center">
-      <div className="mb-6">
-        <span className="inline-block px-4 py-1 neo-border text-sm font-bold neo-shadow-sm mb-4">
-          ✨ Available for cool stuff
-        </span>
-      </div>
+      
       {/* Page status indicator */}
-      <div className="fixed bottom-8 right-8 hidden lg:block pointer-events-none z-40">
+      <div className="fixed hidden lg:block pointer-events-none z-40 top-4 left-4">
         <div className="neo-border bg-white px-4 py-2 neo-shadow transform rotate-3 flex items-center gap-2">
-          <div className="w-2 h-2 bg-[#bef264] rounded-full animate-pulse"></div>
           <span className="text-xs font-bold uppercase tracking-widest">✨ Available for cool stuff</span>
         </div>
       </div>
 
       <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
-        Data Scientist & <span className="bg-[#bef264] px-2 border-b-4 border-black">AI</span> Ambassador.
+        <span className="bg-[#bef264] px-2 border-b-4 border-black">Data</span> Scientist & <br /><span className="bg-[#bef264] px-2 border-b-4 border-black">AI</span> Ambassador.
       </h1>
       
       <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed mb-10">
-        I am a Lead Data Scientist and AI enthusiast with over ten years of international experience across industry sectors: from science and legal tech, and government to creative media, energy, and manufacturing.
+        I am a Data Science and AI passionate with over ten years of international experience across industry sectors: from science and legal tech, and government to creative media, energy, and manufacturing.
       </p>
 
       <div className="flex flex-wrap gap-4">
