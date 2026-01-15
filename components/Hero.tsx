@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
-        <span className="bg-[#bef264] px-2 border-b-4 border-black">Data</span> Scientist & <br><span className="bg-[#bef264] px-2 border-b-4 border-black">AI</span> Ambassador.</br>
+        <span className="bg-[#bef264] px-2 border-b-4 border-black">Data</span> Scientist & <span className="bg-[#bef264] px-2 border-b-4 border-black"><br />AI</span> Ambassador.
       </h1>
       
       <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed mb-10">
