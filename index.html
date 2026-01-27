@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS.AI | AI & Data Science Portfolio</title>
+    <title>AI & Data Science Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -20,15 +20,62 @@
             box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
         }
         .neo-shadow-hover:hover {
-            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
-            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+            transform: translate(-4px, -4px);
         }
         .neo-shadow-active:active {
-            box-shadow: 1px 1px 0px 0px rgba(0,0,0,1);
+            box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
             transform: translate(2px, 2px);
         }
         .neo-border {
-            border: 2px solid black;
+            border: 3px solid black;
+        }
+        
+        /* Perspective for flip effect */
+        .perspective {
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .flip-card-inner.is-flipped {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+        .cursor-blink {
+          animation: blink 1s step-end infinite;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #bef264;
+          border-radius: 2px;
         }
     </style>
 
@@ -42,7 +89,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/ai-professional-portfolio/assets/index-DF9n_dii.js"></script>
+  <script type="module" crossorigin src="/assets/index-CPlMl-Oa.js"></script>
 </head>
 <body>
     <div id="root"></div>
