@@ -9,42 +9,46 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
-    <section id="home" className="pt-32 pb-20 px-4 max-w-6xl mx-auto min-h-[80vh] flex flex-col justify-center">
-      
-      {/* Page status indicator */}
-      <div className="hidden lg:block pointer-events-none z-40 w-fit">
-        <div className="neo-border bg-white px-4 py-2 neo-shadow transform rotate-3 flex items-center gap-2">
-          <span className="text-xs font-bold uppercase tracking-widest">✨ Available for cool stuff</span>
+    <section id="home" className="flex-1 flex flex-col justify-center px-4 max-w-4xl mx-auto w-full pt-12 pb-20">
+      {/* Brand & Intro - Left Justified */}
+      <div className="w-full text-left mb-16">
+        <div className="text-[18px] leading-[0.9] font-normal tracking-[0.2em] text-gray-500 uppercase mb-4">
+          Anna Hernandez
+        </div>
+        <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-8">
+          Data and AI.
+        </h1>
+        <p className="text-lg font-medium text-black/80 max-w-2xl leading-relaxed">
+          I am a Data Scientist with over ten years of international experience across industry sectors: from biosciences, legal tech, and government to creative media, energy, and manufacturing.
+        </p>
+      </div>
+
+      {/* Services - Left Aligned */}
+      <div className="w-full text-left mb-16">
+        <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-6">Services I offer:</h3>
+        <div className="flex flex-wrap justify-start gap-x-10 gap-y-4 text-lg font-bold">
+          <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span> Training & Mentoring</span>
+          <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span> Software Development</span>
+          <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span> Strategy Guidance</span>
         </div>
       </div>
 
-      <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
-        <span className="bg-[#bef264] px-2 border-b-4 border-black">Data</span> Scientist & <br /><span className="bg-[#bef264] px-2 border-b-4 border-black">AI</span> Ambassador.
-      </h1>
-      
-      <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed mb-10">
-        I am a Data Science and AI advocate with over ten years of international experience across industry sectors: from biosciences, legal tech, and government to creative media, energy, and manufacturing.
-      </p>
-          
-      <div className="neo-border bg-[#bef264] p-8 neo-shadow -rotate-1">
-        <h3 className="font-bold text-xl mb-4">Core Focus Areas</h3>
-        <ul className="space-y-2 font-medium">
-          <li>→ Sustainability & Circular Economy</li>
-          <li>→ Industrial AI / Predictive Maintenance</li>
-          <li>→ Generative AI Governance & Ethics</li>
-          <li>→ Technical Strategy for Product Teams</li>
-          <li>→ Human-AI Collaboration Frameworks</li>
-        </ul>
-      </div>
-        
-
-      <div className="flex flex-wrap gap-4">
-        <NeoButton onClick={() => onNavigate(Section.WORK)} className="bg-[#bef264] py-4 px-10 text-xl" variant="accent">
+      {/* Action Row - Left Aligned & Horizontal */}
+      <div className="w-full flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12">
+        <NeoButton 
+          onClick={() => onNavigate(Section.WORK)} 
+          className="py-4 px-10 text-xl" 
+          variant="accent"
+        >
           See my work
         </NeoButton>
-        <NeoButton onClick={() => onNavigate(Section.CONTACT)} className="py-4 px-10 text-xl">
-          Get in touch
-        </NeoButton>
+        
+        <button 
+          onClick={() => onNavigate(Section.CONTACT)}
+          className="font-black text-2xl md:text-4xl hover:text-[#6a9e10] transition-colors underline decoration-8 decoration-[#bef264] underline-offset-8 tracking-tighter"
+        >
+          Let's connect →
+        </button>
       </div>
     </section>
   );

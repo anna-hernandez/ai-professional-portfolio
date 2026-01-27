@@ -2,12 +2,18 @@
 export interface Project {
   id: string;
   title: string;
-  context: string;
+  challenge: string;
+  result: string;
+  expandedDescription: string;
+  ctaText?: string;
   role: string;
-  approach: string[];
-  results: string;
   stack: string;
-  image?: string;
+  imageUrl: string;
+  isMentoring?: boolean;
+  isIC?: boolean;
+  isLead?: boolean;
+  githubUrl?: string;
+  tags: string[];
 }
 
 export interface Note {
@@ -29,7 +35,5 @@ export enum Section {
   HOME = 'home',
   ABOUT = 'about',
   WORK = 'work',
-  GROWTH = 'growth',
-  NOTES = 'notes',
   CONTACT = 'contact'
 }

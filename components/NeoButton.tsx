@@ -3,7 +3,8 @@ import React from 'react';
 
 interface NeoButtonProps {
   children: React.ReactNode;
-  onClick?: () => void;
+  // Fix: Updated onClick type to accept React.MouseEvent to support event control like stopPropagation()
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
   active?: boolean;
   variant?: 'primary' | 'secondary' | 'accent';
