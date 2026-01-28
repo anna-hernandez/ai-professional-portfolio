@@ -18,7 +18,7 @@ const TerminalIcon = () => (
 
 const About: React.FC<AboutProps> = ({ onNavigate }) => {
   return (
-    <section id="about" className="flex-1 flex flex-col justify-center px-4 max-w-4xl mx-auto w-full py-12 md:py-24">
+    <section id="about" className="flex-1 flex flex-col px-6 md:px-8 max-w-5xl mx-auto w-full pt-16 md:pt-24 pb-24">
       <div className="w-full">
         <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-16">
           My journey, briefly.

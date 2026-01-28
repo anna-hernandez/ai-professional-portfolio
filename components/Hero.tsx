@@ -9,10 +9,11 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
-    <section id="home" className="flex-1 flex flex-col justify-center px-4 max-w-4xl mx-auto w-full pt-12 pb-20">
+    <section id="home" className="flex-1 flex flex-col px-6 md:px-8 max-w-5xl mx-auto w-full pt-16 md:pt-24 pb-20">
       {/* Brand & Intro - Left Justified */}
-      <div className="w-full text-left mb-16">
-        <div className="text-[18px] leading-[0.9] font-normal tracking-[0.2em] text-gray-500 uppercase mb-4">
+      <div className="w-full text-left mb-16 relative">
+        {/* Absolute positioning to prevent pushing the h1 down */}
+        <div className="absolute -top-10 md:-top-12 left-0 text-[16px] md:text-[18px] leading-[0.9] font-normal tracking-[0.2em] text-gray-500 uppercase">
           Anna Hernandez
         </div>
         <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-8">
