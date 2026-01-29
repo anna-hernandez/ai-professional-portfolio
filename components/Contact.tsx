@@ -25,8 +25,7 @@ const Contact: React.FC = () => {
             </h2>
             <div className="max-w-lg w-full">
               <p className="text-lg md:text-xl mb-10 text-black leading-relaxed">
-                I'm always open to discussing new projects, and challenges, or speaking opportunities about human-centric data science.
-                Are you looking for personalised mentoring or training for your team on AI adoption or MLOps best practices?
+                I'm always open to discussing new projects, and challenges, or mentoring opportunities about human-centric data science. Feel free to reach out using the form, or connect with me on LinkedIn.
               </p>
               
               {/* Centered LinkedIn icon relative to the paragraph block above */}
