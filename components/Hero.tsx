@@ -21,16 +21,21 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         </h1>
         <p className="text-lg font-medium text-black/80 max-w-2xl leading-relaxed">
           I am a Data Scientist with over ten years of international experience across industry sectors: from biosciences, legal tech, and government to creative media, energy, and manufacturing.
+          My background blends research and industry-grade applied machine learning and AI.
+          
+          I have led teams and product innovation roadmaps using predictive and generative AI, as well as MLOps and data governance initiatives. I am an advocate for AI literacy democratisation, and I lead fostering team growth and cross-functional collaboration to transform data into meaningful, human-centered, solutions.
+          
+          I am passionate about making AI accessible, ethical, and useful, not just powerful, and I love building bridges between technical experts and non-technical teams to make that happen.
         </p>
       </div>
 
       {/* Services - Left Aligned */}
       <div className="w-full text-left mb-16">
-        <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-6">Services I offer:</h3>
+        <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-6">Services:</h3>
         <div className="flex flex-wrap justify-start gap-x-10 gap-y-4 text-lg font-bold">
           <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span> Training & Mentoring</span>
           <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span> Software Development</span>
-          <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span> Strategy Guidance</span>
+          <span className="flex items-center gap-3"><span className="w-2 h-2 bg-[#bef264] border border-black"></span>AI Strategy</span>
         </div>
       </div>
 

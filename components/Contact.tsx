@@ -24,8 +24,9 @@ const Contact: React.FC = () => {
               Let's talk.
             </h2>
             <div className="max-w-lg w-full">
-              <p className="text-lg md:text-xl font-bold mb-10 text-black leading-relaxed">
-                I'm always open to discussing new industrial projects, sustainability challenges, or speaking opportunities about human-centric data science.
+              <p className="text-lg md:text-xl mb-10 text-black leading-relaxed">
+                I'm always open to discussing new projects, and challenges, or speaking opportunities about human-centric data science.
+                Are you looking for personalised mentoring or training for your team on AI adoption or MLOps best practices?
               </p>
               
               {/* Centered LinkedIn icon relative to the paragraph block above */}
