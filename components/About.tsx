@@ -32,44 +32,52 @@ const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <div className="space-y-12 max-w-3xl">
             <p>
               <TerminalIcon />
-              I started in academia, with a <Highlight>PhD</Highlight> in Computational Biology. I used <Highlight>graph and clustering</Highlight> algorithms to understand viral-host protein relationships and modeled viral entry proteins. That led to 5 papers and 1 patent.
+              I started in academia, with a <Highlight>PhD</Highlight> in Computational Biology. I used <Highlight>graph and clustering</Highlight> algorithms to understand viral-host protein relationships and modeled viral entry proteins. That led to 5 papers and 1 patent application.
             </p>
 
             <p>
               <TerminalIcon />
               I transitioned into industry via an internship, and that got me completely hooked. to the translation of research and theory into products and solutions. The internship was followed by a couple of years in <Highlight>AI consultancy</Highlight>, as an <i>official</i> Data Scientist, learning from great colleagues and mentors in a fast-paced and dynamic environment. I worked in projects in the legal, education, biosciences, government security and marketing domains.
-              
-              <TerminalIcon />
-              Many of my projects were <Highlight>NLP</Highlight>-focused, requiring from more simple techniques (such as document classification with algorithms as foundational as logistic regression and having to handcraft the features yourself), to much more advanced approaches such as customising the architecture and fine-tuning a generative model at a time when these were a dream rather than a reality. I also stepped into <Highlight>computer vision</Highlight>, applied <Highlight>differential privacy</Highlight> techniques in client-facing real-world use cases. I also worked on <Highlight>causal inference</Highlight> applied to marketting campaigns during as part of a secondment in the R+D team..
-            </p>
-            
-            <p>
-              <TerminalIcon />
-              My next move took me to the world of digital entertainment, with a large-scale multi-national animation studio and distribution enterprise. The entertainment domain was new to me, as it was the company structure: from a mid-sized national company with a relatively large DS team (~50% of the company employees) to a very large, multi-national company, with thousands of employees, with a very small data science team. But I adapted, and I progressively rose from data scientist to senior data scientist, and, finally, team <Highlight>tech lead</Highlight>. 
-            </p>
-            <p>
-              <TerminalIcon />
-              As a digital entertainment company, the data available was vast: audio, text, video, image. Structured, unstructured, semi-structured data. You name it. And whilst our stakeholders were internal, this didn't reduce the variety of challenges. Here I honed my skills in <Highlight>computer vision</Highlight> and <Highlight>cloud technologies</Highlight>.
-              
-              <TerminalIcon />
-              As individual contributor I worked on maintaining the existing codebases and projects, and developing new products, collaborating closely with stakeholders to understand their feature requirements and priorities. In parallel, I worked on growing the team, interviewing external candidates and <Highlight>mentoring</Highlight> colleagues.
-              
-              <TerminalIcon />
-              As senior data scientist I took responsibility for devising and rolling out the <Highlight>MLOps</Highlight> strategy for the team, while becoming more involved in <Highlight>roadmap planning</Highlight> and alignment with the broader company strategy.
-              
-              <TerminalIcon />
-              As tech lead, I remained an individual contributor on high priority or high complexity projects, but got fully embedded into business strategy, team development activities, and coordination with stakeholders and business owners to help define strategy and meet milestones, whilst protecting the sanity of my tech team. A defining aspect of my role, was to spearhead the development and implementation of the company's <Highlight>Generative AI governance</Highlight> framework during the initial surge of generative machine learning.
             </p>
 
             <p>
               <TerminalIcon />
-              Currently, I'm back into AI consultancy start-up in the energy-intensive industry sector. My role is a mixture of hands-on technical work, with a focus on <Highlight>Generative AI</Highlight> solutions, and strategic guidance.  In parallel, I collaborate with the commercial team to engage with new clients, generate and convert leads, and ideate new products and solutions specific that help organisations face their challenges in a more efficient and sustainability-aware manner.
+              Many of my projects were <Highlight>NLP</Highlight>-focused, requiring from foundational techniques, to much more advanced approaches such as customising the architecture and fine-tuning a generative model at a time when these were a dream rather than a reality. I also stepped into <Highlight>computer vision</Highlight>, applied <Highlight>differential privacy</Highlight> techniques in client-facing real-world use cases. I also worked on <Highlight>causal inference</Highlight> applied to marketting campaigns during as part of a secondment in the R+D team.
+            </p>
+            
+            <p>
+              <TerminalIcon />
+              My next move took me to the world of digital entertainment, with a large-scale multi-national animation studio and distribution enterprise. The entertainment domain was new to me, as it was the company structure: from a mid-sized national company with a team half its size, to a very large, multi-national company, with thousands of employees, and a very small data science team. But I adapted, and I progressively rose from data scientist to senior data scientist, and, finally, team <Highlight>tech lead</Highlight>. 
             </p>
             <p>
               <TerminalIcon />
-              My journey so far has complemented my highly technical background, with strategic thinking and product management skills, gaining insights from across very different organisation sizes and structures, industry sectors, and collaborating with very diverse professional and
-              personal backgrounds.
-              
+              As a digital entertainment company, the data available was vast: audio, text, video, image. Structured, unstructured, semi-structured data. You name it. And whilst our stakeholders were internal, the variety of challenges didn't reduce. Here, I honed my skills in <Highlight>computer vision</Highlight> and <Highlight>cloud technologies</Highlight>.
+            </p>
+
+            <p>
+              <TerminalIcon />
+              As individual contributor I worked on maintaining the existing codebases and projects, and developing new products, collaborating closely with stakeholders to understand their feature requirements and priorities. In parallel, I worked on growing the team, interviewing external candidates and <Highlight>mentoring</Highlight> colleagues.
+            </p>
+
+            <p>
+              <TerminalIcon />
+              As senior data scientist I took responsibility for devising and rolling out the <Highlight>MLOps</Highlight> strategy for the team, while becoming more involved in <Highlight>roadmap planning</Highlight> and alignment with the broader company strategy.
+            </p>
+
+            <p>
+              <TerminalIcon />
+              As tech lead, I remained an individual contributor on high priority or high complexity projects, but got fully embedded into business strategy, team development activities, and coordination with stakeholders and business owners to help define strategy and meet milestones, whilst protecting the sanity of the tech team. A defining aspect of my role, was to spearhead the development and implementation of the company's <Highlight>Generative AI governance</Highlight> framework during the initial surge of generative machine learning.
+            </p>
+
+            <p>
+              <TerminalIcon />
+              Currently, I'm back in AI consultancy, within a start-up dedicated to the energy-intensive industry sector. My role is a mixture of hands-on technical work, with a focus on <Highlight>Generative AI</Highlight> solutions, and strategic guidance. In parallel, I collaborate with the commercial team to engage with new clients, generate and convert leads, and ideate new products and solutions specific that help organisations face their challenges in a more efficient and sustainability-aware manner.
+            </p>
+            <p>
+              <TerminalIcon />
+              My journey so far has complemented my highly technical background, with strategic thinking and product management skills, gaining insights from across very different organisation sizes and structures, industry sectors, as well as professional and personal backgrounds.
+            </p>
+            <p>
               Nonetheless, my most valuable skill remains the ability to <Highlight>learn quickly</Highlight>, adapt, and thrive when faced with new environments and challenges.
             </p>
           </div>

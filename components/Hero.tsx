@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           I am a Data Scientist with over ten years of international experience across diverse sectors, including biosciences, legal tech, government, creative media, energy, and manufacturing. My background blends academic research with industry-grade applied machine learning and AI.
         </p>
         <p className="text-lg font-medium text-black/80 max-w-2xl leading-relaxed">
-          I have led teams and product innovation roadmaps, specializing in predictive and generative AI, MLOps, and data governance initiatives. As an advocate for AI literacy, I focus on fostering team growth and cross-functional collaboration to transform complex data into meaningful, human-centered solutions.
+          I have led teams and product roadmaps, specializing in predictive and generative AI, MLOps, and data governance initiatives. As an advocate for AI literacy, I focus on fostering team growth and cross-functional collaboration to transform complex data into meaningful, human-centered solutions.
         </p>
         <p className="text-lg font-medium text-black/80 max-w-2xl leading-relaxed">
           I am passionate about making AI accessible, ethical, and useful. Not just powerful. I thrive on building bridges between technical experts and non-technical stakeholders to ensure AI delivers real-world impact.
