@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
     imageUrl: '',
     isIC: true,
     isLead: true,
-    tags: ['Bayesian Statistics', 'Statistics']
+    tags: ['Bayesian', 'Statistics']
   },
   {
     id: 'gen-ai-governance',
@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     imageUrl: '',
     isIC: true,
     isLead: true,
-    tags: ['MLOps', 'Serverless Architecture']
+    tags: ['MLOps', 'Serverless']
   },
   {
     id: 'hybrid-search',
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     stack: 'NER, NLP, Serverless',
     imageUrl: '',
     isIC: true,
-    tags: ['NLP', 'Serverless Architecture']
+    tags: ['NLP', 'Serverless']
   },
   {
     id: 'serverless-llm',
@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/anna-hernandez/serverless-sentiment',
     isIC: true,
     isLead: true,
-    tags: ['Gen AI', 'MLOps', 'Serverless Architecture']
+    tags: ['Gen AI', 'MLOps', 'Serverless']
   }
 ];
 

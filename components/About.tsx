@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = ({ onNavigate }) => {
               <TerminalIcon />
               I transitioned into industry via an internship, and that got me completely hooked. to the translation of research
           and theory into products and solutions. The internship was
-          followed by a couple of years in <Highlight>AI consultancy</Highlight>, as an <i>officially</i> Data Scientist, learning from great colleagues and mentors in a fast-paced and dynamic
+          followed by a couple of years in <Highlight>AI consultancy</Highlight>, as an <i>official</i> Data Scientist, learning from great colleagues and mentors in a fast-paced and dynamic
           environment. I worked in projects in the legal, education,
           biosciences, government security and marketing domains. Many of my
           projects were <Highlight>NLP</Highlight>-focused, requiring from more simple
@@ -53,12 +53,46 @@ const About: React.FC<AboutProps> = ({ onNavigate }) => {
             
             <p>
               <TerminalIcon />
-              At WildBrain, I rose to <Highlight>Tech Lead</Highlight>, shipping features while rolling out the company's <Highlight>Generative AI</Highlight> adoption framework and re-architecting <Highlight>ML operations</Highlight>.
+              My next move took me to the world of digital entertainment, with a large-scale multi-national animation studio and distribution enterprise. The entertainment domain was new to me, as it was the company structure: from a mid-sized national company with a relatively large DS
+                team (~50% of the company employees) to a very large,
+                multi-national company, with thousands of employees, with a very
+                small data science team. But I adapted, and I progressively
+                rose from data scientist to senior data scientist,
+                and, finally, team <Highlight>tech lead</Highlight>. 
+            </p>
+            <p>
+              <TerminalIcon />
+              As a digital entertainment company, the data available was vast: audio, text, video, image.
+            Structured, unstructured, semi-structured data. You name it.
+            And whilst our stakeholders were internal, this
+            didn't reduce the variety of challenges. Here I honed my skills in <Highlight>computer vision</Highlight> and <Highlight>cloud technologies</Highlight>. As individual contributor I worked on maintaining the existing codebases and
+            projects, and developing new products, collaborating closely with
+            stakeholders to understand their feature requirements and
+            priorities. In parallel, I worked on growing the team,
+            interviewing external candidates and mentoring colleagues. As senior data scientist I took responsibility for devising and rolling out the <Highlight>MLOps</Highlight> strategy for the team, while becoming more involved in roadmap planning and alignment with the broader company strategy. As tech lead, I remained an
+            individual contributor on
+            high priority or high complexity projects, but got fully embedded into
+            business strategy, team development activities, and
+            coordination with stakeholders and business owners to help define
+            strategy and meet milestones, whilst protecting the sanity of my
+            tech team. A defining aspect of my role, was to spearhead the development and implementation of the company's <Highlight>Generative AI governance</Highlight> framework during the initial surge of generative machine learning.
             </p>
 
             <p>
               <TerminalIcon />
-              Currently, I help industries navigate AI through <Highlight>technical strategy</Highlight>, workshops, and production-ready <Highlight>prototypes</Highlight>.
+              Currently, I'm back into AI consultancy start-up in the energy-intensive industry sector. My role is a mixture of hands-on technical work, with a focus on <Highlight>Generative AI</Highlight> solutions, and strategic guidance. 
+          In parallel, I collaborate with the commercial team to engage
+          with new clients, generate and convert leads, and ideate new
+          products and solutions specific that help organisations face their
+              challenges in a more efficient and sustainability-aware manner.
+              
+              My
+          journey so far has complemented my highly technical
+          background, with strategic thinking and product management skills,
+          gaining insights from across very different organisation sizes and structures, industry
+          sectors, and collaborating with very diverse professional and
+              personal backgrounds.
+              Nonetheless, my most valuable skill remains the ability to <Highlight>learn quickly</Highlight>, adapt, and thrive when faced with new environments and challenges.
             </p>
           </div>
 
