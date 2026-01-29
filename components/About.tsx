@@ -32,12 +32,23 @@ const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <div className="space-y-12 max-w-3xl">
             <p>
               <TerminalIcon />
-              I started in academia, through my PhD in <Highlight>Computational Biology</Highlight>. I used <Highlight>graph and clustering algorithms</Highlight> to understand viral-host protein relationships and modeled viral entry proteins. That led to 5 papers and 1 patent.
+              I started in academia, with a <Highlight>PhD</Highlight> in Computational Biology. I used <Highlight>graph and clustering</Highlight> algorithms to understand viral-host protein relationships and modeled viral entry proteins. That led to 5 papers and 1 patent.
             </p>
 
             <p>
               <TerminalIcon />
-              I transitioned into industry via Faculty AI, translating research into solutions for legal, education, and marketing domains using <Highlight>NLP</Highlight> and <Highlight>causal inference</Highlight>.
+              I transitioned into industry via an internship, and that got me completely hooked. to the translation of research
+          and theory into products and solutions. The internship was
+          followed by a couple of years in <Highlight>AI consultancy</Highlight>, as an <i>officially</i> Data Scientist, learning from great colleagues and mentors in a fast-paced and dynamic
+          environment. I worked in projects in the legal, education,
+          biosciences, government security and marketing domains. Many of my
+          projects were <Highlight>NLP</Highlight>-focused, requiring from more simple
+          techniques (such as document classification with algorithms as
+          foundational as logistic regression and having to handcraft the
+          features yourself), to much more advanced approaches such as
+          customising the architecture and fine-tuning a generative model
+          at a time when these were a dream rather than a
+          reality. I also stepped into <Highlight>computer vision</Highlight>, applied <Highlight>differential privacy</Highlight> techniques in client-facing real-world use cases. I also worked on <Highlight>causal inference</Highlight> applied to marketting campaigns during as part of a secondment in the R+D team..
             </p>
             
             <p>
