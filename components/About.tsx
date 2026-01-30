@@ -29,7 +29,7 @@ const About: React.FC<AboutProps> = ({ onNavigate }) => {
             I've now worked in Data Science for over 10 years. They've gone fast.
           </p>
 
-          <div className="space-y-12 max-w-3xl">
+          <div className="space-y-5 max-w-3xl">
             <p>
               <TerminalIcon />
               I started in academia, with a <Highlight>PhD</Highlight> in Computational Biology. I used <Highlight>graph and clustering</Highlight> algorithms to understand viral-host protein relationships and modeled viral entry proteins. That led to 5 papers and 1 patent application.
