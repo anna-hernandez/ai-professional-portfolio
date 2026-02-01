@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
     role: 'RAG Engineer',
     stack: 'PostgreSQL, pgvector, Docker',
     imageUrl: '',
-    githubUrl: 'https://github.com/anna-hernandez/hybrid-search-study',
+    githubUrl: 'https://github.com/anna-hernandez/demo-rag-postgresql',
     isIC: true,
     isLead: true,
     tags: ['NLP', 'LLMs', 'Vector DB']
@@ -101,7 +101,7 @@ export const PROJECTS: Project[] = [
     role: 'Cloud Architect',
     stack: 'AWS Lambda, Bedrock, Docker',
     imageUrl: '',
-    githubUrl: 'https://github.com/anna-hernandez/serverless-sentiment',
+    githubUrl: 'https://github.com/anna-hernandez/demo-sentiment-analysis-with-aws-bedrock',
     isIC: true,
     isLead: true,
     tags: ['Gen AI', 'MLOps', 'Serverless']

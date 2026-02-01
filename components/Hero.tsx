@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
-    <section id="home" className="flex-1 flex flex-col px-6 md:px-8 max-w-5xl mx-auto w-full pt-16 md:pt-24 pb-20">
+    <section id="home" className="flex-1 flex flex-col px-6 md:px-8 max-w-5xl mx-auto w-full pt-16 md:pt-24 pb-20 space-y-5">
       {/* Brand & Intro - Left Justified */}
       <div className="w-full text-left mb-16 relative">
         {/* Absolute positioning to prevent pushing the h1 down */}

@@ -15,9 +15,10 @@ const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Sending CV Request to: annahernandez.consulting@gmail.com", {
+    console.log("Sending CV Request", {
       ...formData,
-      subject: "CV Request from Portfolio"
+      subject: "CV Request from Portfolio",
+      bcc: "annahernandez.consulting@gmail.com"
     });
     setSubmitted(true);
     setTimeout(() => {

@@ -8,6 +8,11 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("Sending message to: annahernandez.consulting@gmail.com", {
+      ...formData,
+      to: "annahernandez.consulting@gmail.com",
+      subject: "Contact Form Submission from Portfolio"
+    });
     setSent(true);
     setTimeout(() => setSent(false), 5000);
   };
@@ -31,7 +36,7 @@ const Contact: React.FC = () => {
               {/* Centered LinkedIn icon relative to the paragraph block above */}
               <div className="flex justify-center w-full">
                 <a 
-                  href="https://linkedin.com/in/anna-hernandez-duran" 
+                  href="https://www.linkedin.com/in/anna-hernandez-duran" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   title="LinkedIn" 
