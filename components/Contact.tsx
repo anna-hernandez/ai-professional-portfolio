@@ -1,20 +1,45 @@
 
 import React, { useState } from 'react';
 import NeoButton from './NeoButton';
+import { FORMSPREE_CONTACT_FORM_ID } from '../constants';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Sending message to: annahernandez.consulting@gmail.com", {
-      ...formData,
-      to: "annahernandez.consulting@gmail.com",
-      subject: "Contact Form Submission from Portfolio"
-    });
-    setSent(true);
-    setTimeout(() => setSent(false), 5000);
+    setStatus('submitting');
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_CONTACT_FORM_ID}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: 'Contact Form Submission from Portfolio'
+        })
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || 'Something went wrong');
+      }
+    } catch (error) {
+      setStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   return (
@@ -52,21 +77,29 @@ const Contact: React.FC = () => {
           
           {/* Right Column: Form */}
           <div className="bg-white neo-border p-8 md:p-10 neo-shadow w-full">
-            {sent ? (
+            {status === 'success' ? (
               <div className="h-full flex flex-col items-center justify-center text-center p-4 space-y-6">
                 <div className="text-6xl">🚀</div>
                 <h3 className="text-3xl font-black uppercase tracking-tighter">Message Sent!</h3>
                 <p className="font-medium text-black/70">I'll get back to you within 24 hours.</p>
-                <NeoButton onClick={() => setSent(false)} className="px-12 py-4">Send another</NeoButton>
+                <NeoButton onClick={() => setStatus('idle')} className="px-12 py-4">Send another</NeoButton>
+              </div>
+            ) : status === 'error' ? (
+              <div className="h-full flex flex-col items-center justify-center text-center p-4 space-y-6">
+                <div className="text-6xl">😕</div>
+                <h3 className="text-3xl font-black uppercase tracking-tighter">Oops!</h3>
+                <p className="font-medium text-black/70">{errorMessage}</p>
+                <NeoButton onClick={() => setStatus('idle')} className="px-12 py-4">Try again</NeoButton>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-[10px] font-black mb-1 uppercase tracking-widest text-gray-500">Full Name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     required
-                    className="w-full p-4 neo-border focus:bg-[#bef264]/10 outline-none transition-colors font-bold text-black"
+                    disabled={status === 'submitting'}
+                    className="w-full p-4 neo-border focus:bg-[#bef264]/10 outline-none transition-colors font-bold text-black disabled:opacity-50"
                     placeholder="Your name"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -74,10 +107,11 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-[10px] font-black mb-1 uppercase tracking-widest text-gray-500">Email Address</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     required
-                    className="w-full p-4 neo-border focus:bg-[#bef264]/10 outline-none transition-colors font-bold text-black"
+                    disabled={status === 'submitting'}
+                    className="w-full p-4 neo-border focus:bg-[#bef264]/10 outline-none transition-colors font-bold text-black disabled:opacity-50"
                     placeholder="your@email.com"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -85,16 +119,23 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-[10px] font-black mb-1 uppercase tracking-widest text-gray-500">How can I help?</label>
-                  <textarea 
+                  <textarea
                     required
                     rows={4}
-                    className="w-full p-4 neo-border focus:bg-[#bef264]/10 outline-none transition-colors resize-none font-bold text-black"
+                    disabled={status === 'submitting'}
+                    className="w-full p-4 neo-border focus:bg-[#bef264]/10 outline-none transition-colors resize-none font-bold text-black disabled:opacity-50"
                     placeholder="Tell me about your project..."
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                   ></textarea>
                 </div>
-                <NeoButton variant="accent" className="w-full py-5 text-xl">Submit Inquiry</NeoButton>
+                <NeoButton
+                  variant="accent"
+                  className="w-full py-5 text-xl disabled:opacity-50"
+                  disabled={status === 'submitting'}
+                >
+                  {status === 'submitting' ? 'Sending...' : 'Submit Inquiry'}
+                </NeoButton>
               </form>
             )}
           </div>

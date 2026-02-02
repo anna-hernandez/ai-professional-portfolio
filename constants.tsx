@@ -1,6 +1,11 @@
 
 import { Project, LearningItem, Note } from './types';
 
+// Formspree Configuration
+// Create forms at https://formspree.io and replace these IDs with your own
+export const FORMSPREE_CONTACT_FORM_ID = 'xqelyvap';
+export const FORMSPREE_CV_FORM_ID = 'mvzqwjoy';
+
 export const PROJECTS: Project[] = [
   {
     id: 'video-engagement',
